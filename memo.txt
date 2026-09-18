@@ -1,0 +1,125 @@
+Chess/
+├── CMakeLists.txt
+├── README.md
+│
+├── assets/
+│   ├── pieces/
+│   │   ├── white_king.png
+│   │   ├── white_queen.png
+│   │   ├── white_rook.png
+│   │   ├── white_bishop.png
+│   │   ├── white_knight.png
+│   │   ├── white_pawn.png
+│   │   ├── black_king.png
+│   │   ├── black_queen.png
+│   │   ├── black_rook.png
+│   │   ├── black_bishop.png
+│   │   ├── black_knight.png
+│   │   └── black_pawn.png
+│   │
+│   └── sounds/
+│
+├── include/
+│   ├── chess/
+│   │   ├── Board.hpp
+│   │   ├── Piece.hpp
+│   │   ├── Move.hpp
+│   │   ├── GameState.hpp
+│   │   ├── ChessGame.hpp
+│   │   ├── Rules.hpp
+│   │   ├── Position.hpp
+│   │   └── Types.hpp
+│   │
+│   ├── notation/
+│   │   ├── Fen.hpp
+│   │   └── Pgn.hpp
+│   │
+│   ├── ai/
+│   │   ├── Engine.hpp
+│   │   ├── Minimax.hpp
+│   │   └── Evaluation.hpp
+│   │
+│   └── ui/
+│       ├── MainWindow.hpp
+│       ├── ChessBoardWidget.hpp
+│       └── GameController.hpp
+│
+├── src/
+│   ├── chess/
+│   │   ├── Board.cpp
+│   │   ├── Piece.cpp
+│   │   ├── Move.cpp
+│   │   ├── GameState.cpp
+│   │   ├── ChessGame.cpp
+│   │   ├── Rules.cpp
+│   │   ├── Position.cpp
+│   │   └── Types.cpp
+│   │
+│   ├── notation/
+│   │   ├── Fen.cpp
+│   │   └── Pgn.cpp
+│   │
+│   ├── ai/
+│   │   ├── Engine.cpp
+│   │   ├── Minimax.cpp
+│   │   └── Evaluation.cpp
+│   │
+│   ├── ui/
+│   │   ├── MainWindow.cpp
+│   │   ├── ChessBoardWidget.cpp
+│   │   └── GameController.cpp
+│   │
+│   └── main.cpp
+│
+└── tests/
+    ├── BoardTest.cpp
+    ├── PawnTest.cpp
+    ├── KnightTest.cpp
+    ├── BishopTest.cpp
+    ├── RookTest.cpp
+    ├── QueenTest.cpp
+    ├── KingTest.cpp
+    ├── CheckTest.cpp
+    ├── CastlingTest.cpp
+    ├── EnPassantTest.cpp
+    ├── PromotionTest.cpp
+    └── GameTest.cpp
+
+
+
+개발 순서
+1. CMake 프로젝트 생성
+        ↓
+2. Types / Position
+        ↓
+3. Piece
+        ↓
+4. Board
+        ↓
+5. Move
+        ↓
+6. GameState
+        ↓
+7. 각 말의 기본 이동 규칙
+        ↓
+8. Legal Move 판정
+        ↓
+9. Check
+        ↓
+10. Checkmate / Stalemate
+        ↓
+11. Castling
+        ↓
+12. En Passant
+        ↓
+13. Promotion
+        ↓
+14. Undo / Redo
+        ↓
+15. FEN
+        ↓
+16. GUI
+        ↓
+17. PGN
+        ↓
+18. AI
